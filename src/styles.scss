@@ -6,6 +6,10 @@
   background-color: pink;
 }
 
+.content-container {
+  min-height: calc(100vh - 85px - 91px);
+}
+
 html {
   -webkit-text-size-adjust: 100%;
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,

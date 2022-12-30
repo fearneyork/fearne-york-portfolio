@@ -6,7 +6,7 @@ export interface IFooterProps {}
 
 export function Footer (props: IFooterProps) {
   return (
-    <div className={styles['footer']}>
+    <div className={styles['footer-container']}>
       <Body content='Fearne C. York @ 2023'/>
       <Body content='Socials'/>
     </div>

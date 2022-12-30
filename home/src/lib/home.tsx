@@ -1,16 +1,25 @@
 import { Link } from 'react-router-dom';
 import styles from './home.module.scss';
-import { Footer } from '../../../components/src/index'
+import { Footer, Header } from '../../../components/src/index'
 
 /* eslint-disable-next-line */
 export interface HomeProps {}
 
+function Content () {
+  return (
+    <div className={styles['content-container']}>
+      <Link to="/cv">View CV</Link>
+    </div>
+  )
+}
+
 export function Home(props: HomeProps) {
   return (
-    <div className={styles['background']}>
-          <Link to="/cv">View CV</Link>
-          <Footer />
-    </div>
+    <>
+      <Header />
+      <Content />
+      <Footer />
+    </>
   );
 }
 
