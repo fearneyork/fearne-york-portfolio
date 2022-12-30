@@ -1,7 +1,18 @@
-.footer {
-  background-color: greenyellow;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 0rem 4rem 3rem 4rem;
-}
+  .footer {
+    background-color: greenyellow;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0rem 4rem 3rem 4rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    .footer {
+      background-color: blueviolet;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0rem 4rem 3rem 4rem;
+    }
+  }
