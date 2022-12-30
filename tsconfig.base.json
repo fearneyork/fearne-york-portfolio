@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@fearne-york-portfolio/cv": ["cv/src/index.ts"]
+      "@fearne-york-portfolio/cv": ["cv/src/index.ts"],
+      "@fearne-york-portfolio/home": ["home/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
