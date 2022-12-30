@@ -1,0 +1,18 @@
+  .header-container {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    background-color: greenyellow;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    .header-container {
+      background-color: blueviolet;
+      flex-direction: column;
+      align-items: center;
+    }
+  }

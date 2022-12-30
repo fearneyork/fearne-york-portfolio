@@ -1,0 +1,19 @@
+@import '../../../../src/styles.scss';
+
+$fontFamily: 'Fira Code', monospace;
+$base-color: #2a2a2a;
+
+.body {
+  font-family: $fontFamily;
+  font-size: 14px;
+  font-weight: 300;
+  color: $base-color;
+}
+
+.title {
+  font-family: $fontFamily;
+  font-size: 18px;
+  font-weight: 500;
+  color: $base-color;
+  text-decoration: none;
+}
