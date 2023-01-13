@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { IGetCurrentTrackResponse } from './spotifyTypes';
+import { GetCurrentTrackResponse } from '../types/spotifyTypes';
 
 /* Create an HTTP server to handle responses */
 
@@ -10,8 +10,9 @@ const BASE_URL = 'https://api.spotify.com/v1';
 // const SPOTIFY_SECRET = 'dc48b1aece574513a5ed3a2a3e879104';
 const SPOTIFY_OAUTH_BEARER_TOKEN = process.env.REACT_APP_SPOTIFY_OAUTH_BEARER_TOKEN;
 
-export const mapDataFromCurrentlyPlaying = (data: IGetCurrentTrackResponse) => {
-  const trackName = data.item
+export const mapDataFromCurrentlyPlaying = (data: GetCurrentTrackResponse) => {
+  const trackName = data.item?.name;
+
 }
 
 export const callSpotify = (method: string, url: string) => {
